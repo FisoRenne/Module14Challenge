@@ -1,9 +1,4 @@
 :root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
-    --tertiary: #788585;
-    --light-dark: #6f6866;
-    --dark: #38302e;
     --border-radius: 0.3rem;
   }
   
@@ -12,11 +7,11 @@
   }
   
   body {
-    background-color: var(--primary);
+    background-color: white;
     margin: 0;
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
-    color: var(--dark);
+    color: black;
     line-height: 1.5;
     font-size: 16px;
   }
@@ -29,16 +24,16 @@
   h6 {
     font-weight: 700;
     margin: 0;
-    color: var(--dark);
+    color: goldenrod;
     line-height: 1.25;
   }
   
   h2 a:visited {
-    color: var(--tertiary);
+    color: gray;
   }
   
   h2 a {
-    color: var(--primary);
+    color: white;
   }
   
   header {
@@ -52,6 +47,7 @@
   
   a {
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   p {
@@ -67,10 +63,11 @@
   }
   
   .card-header h2 {
-    color: var(--primary);
+    color: white;
   }
   
-  .btn {
+  .btn, 
+  .button {
     font-size: 1.3rem;
     text-decoration: none;
     padding: 6px 5px;
@@ -78,19 +75,19 @@
     display: block;
     margin: 5px 0;
     border-radius: var(--border-radius);
-    color: var(--primary);
+    color: white;
     border: none;
     outline: none;
-    background-color: var(--light-dark);
-    box-shadow: 3px 3px var(--dark);
+    background-color: goldenrod;
+    
     transform: translate(-1px, -1px);
   }
   
   .btn:hover {
-    color: var(--primary);
-    background-color: var(--tertiary);
+    color: blue;
+    /* background-color: var(--tertiary); */
     transform: translate(0, 0);
-    box-shadow: 2px 2px var(--dark);
+    /* box-shadow: 2px 2px var(--dark); */
   }
   
   .btn-inline {
@@ -104,7 +101,7 @@
   .navbar {
     width: 100%;
     position: fixed;
-    background-color: var(--dark);
+    background-color: goldenrod;
   }
   
   .nav-item {
@@ -112,13 +109,13 @@
   }
   
   .nav-item a {
-    color: var(--primary);
+    color: white;
   }
   
   .hero {
     padding: 3% 4%;
-    background-color: var(--dark);
-    color: var(--primary);
+    background-color: goldenrod;
+    color: white;
   }
   
   .hero p {
@@ -127,16 +124,16 @@
   
   .app-title {
     font-size: 3rem;
-    background-color: var(--primary);
-    color: var(--dark);
+    background-color: white;
+    color: black;
     padding: 0 10px;
     display: inline-block;
     border-radius: var(--border-radius);
-    box-shadow: 6px 5px var(--light-dark);
   }
   
   .app-title a {
-    color: var(--dark);
+    color: black;
+    
   }
   
   .list-group {
@@ -147,21 +144,21 @@
     margin-bottom: 10px;
     padding: 1.5%;
     border-radius: var(--border-radius);
-    background-color: var(--light-dark);
-    color: var(--primary);
+    background-color: gray;
+    color: white;
     text-decoration: none;
   }
   
   .list-item:hover {
-    background-color: var(--dark);
+    background-color: black;
   }
   
   .footer a {
     display: inline-block;
     padding: 1em;
     margin-bottom: .5em;
-    background-color: var(--dark);
-    color: var(--primary);
+    background-color: black;
+    color: white;
     border-radius: var(--border-radius);
     text-decoration: none;
   }
@@ -169,13 +166,13 @@
   /* CARDS */
   .card {
     margin: 0 0 20px 0;
-    border: 3px solid var(--dark);
+    border: 3px solid goldenrod;
     border-radius: var(--border-radius);
   }
   
   .card-header {
-    color: var(--primary);
-    background-color: var(--dark);
+    color: white;
+    background-color: goldenrod;
     padding: 1%;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   }
@@ -201,7 +198,7 @@
     padding: 1%;
     margin: 5px 0;
     font-size: 1.2rem;
-    border: 2px solid var(--light-dark);
+    border: 2px solid gray;
     border-radius: var(--border-radius);
   }
   
